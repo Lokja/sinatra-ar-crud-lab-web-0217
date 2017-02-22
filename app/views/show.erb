@@ -1,0 +1,11 @@
+<title>Blog Test</title>
+<body>
+  <h1>Devo's Blog Tester</h1>
+  <h2>Viewing Blog <%= @post.id %>!</h2>
+    <%= "Post name: #{@post.name}" %><br>
+    <%= "Post content: #{@post.content}" %><br>
+    <form method="post" action="/posts/<%= @post.id %>/delete">
+      <input id="hidden" type="hidden" name="_method" value="delete">
+      <input type="submit" value="delete">
+    </form>
+</body>

@@ -1,0 +1,10 @@
+<title>Blog Test</title>
+<body>
+  <h1>Devo's Blog Tester</h1>
+  <h2>View Yo Blogs!</h2>
+    <% Post.all.each do |post| %>
+      <%= "Post name: #{post.name}" %><br>
+      <%= "Post content: #{post.content}" %><br>
+      <br>
+    <% end %>
+</body>
